@@ -46,7 +46,7 @@ if __name__ == '__main__':
     parser.add_argument("--number_of_shards", help="Shards to new index. Default is 1.", default=1, type=int)
     parser.add_argument("--number_of_replicas", help="Replicas to new index. Default is 0.", default=0, type=int)
     args = parser.parse_args()
-    if args.hosts_to:
+    if args.host_to:
         host_to = [args.host_to]
     else:
         host_to = [args.host_from]
